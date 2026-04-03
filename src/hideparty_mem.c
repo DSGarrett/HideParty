@@ -2,6 +2,17 @@
  * hideparty_mem.c - Lua C module for memory operations
  * Provides signature scanning and memory read/write for HideParty addon.
  *
+ * Copyright (C) 2025 Ashita Development Team (original HideParty concept/signatures)
+ * Copyright (C) 2026 DSGarrett (Windower 4 C module port)
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * Based on the Ashita v4 HideParty addon by atom0s.
+ * Memory signatures and pointer structures discovered by atom0s.
+ *
  * This version resolves Lua C API functions at runtime from the already-loaded
  * LuaCore.dll, so it has NO import dependency on LuaCore.dll.
  */

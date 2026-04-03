@@ -1,8 +1,19 @@
 --[[
     HideParty - Windower 4 Addon
     Hides native FFXI party list and target bar UI elements.
-    Ported from Ashita v4 HideParty by atom0s.
     Uses a C module (hideparty_mem.dll) for memory operations.
+
+    Copyright (C) 2025 Ashita Development Team (original HideParty concept, signatures, pointer research)
+    Copyright (C) 2026 DSGarrett (Windower 4 port)
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Based on the Ashita v4 HideParty addon by atom0s.
+    All reverse engineering and memory signature research by atom0s / Ashita Development Team.
+    https://github.com/AshitaXI/Ashita-v4beta
 
     Commands:
         //hp hide [party0|party1|party2|target|all]
