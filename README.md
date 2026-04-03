@@ -9,6 +9,7 @@ Ported from [Ashita v4 HideParty](https://github.com/AshitaXI/Ashita-v4beta) by 
 FFXI's native UI elements (party list, target bar) are rendered as "primitive objects" in memory. HideParty scans `FFXiMain.dll` for known byte patterns (signatures) to locate these objects, then writes to their visibility flags every frame to keep them hidden.
 
 Since Windower 4's Lua environment does not include LuaJIT FFI or expose memory read/write APIs, a small C helper DLL (`hideparty_mem.dll`) provides the memory operations. The DLL resolves LuaCore.dll's Lua C API at runtime via `GetProcAddress`, so it has **zero external dependencies** beyond `kernel32.dll`.
+IF you are knew to C~ development, this previous line is important. Do not blind trust some chuckle fuck, like myself, on the internet with compiled code that you don't know anything about. All the source is here, It has nothing malicious in it, however, this should be said, as a learning point, IMO.
 
 ## Installation
 
